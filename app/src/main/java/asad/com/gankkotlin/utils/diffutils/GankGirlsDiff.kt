@@ -1,0 +1,32 @@
+package asad.com.gankkotlin.utils.diffutils
+
+import android.support.v7.util.DiffUtil
+import asad.com.gankkotlin.http.bean.TitleBean
+
+/**
+ * @ProjectName: GankKotlin
+ * @Package: asad.com.gankkotlin.utils.diffutils
+ * @ClassName: zlq
+ * @Autor: Asia
+ * @CreateDate: 2019-07-05 20:54
+ * @UpdateDate: (更新时间)
+ * @UpdateUser: (更新人)
+ * @UpdateRemark: (更新说明)
+ * @Description: (java类作用描述)
+ * @Version: $VERSION
+ * @Desc
+ **/
+
+class GankGirlsDiff : DiffUtil.ItemCallback<TitleBean>(){
+
+    override fun areContentsTheSame(oldItem: TitleBean, newItem: TitleBean): Boolean {
+
+        return  oldItem.url == newItem.url
+    }
+
+    override fun areItemsTheSame(oldItem: TitleBean, newItem: TitleBean): Boolean {
+        return oldItem.url == newItem.url
+    }
+
+
+}

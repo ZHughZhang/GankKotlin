@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="page_color">#FFFFFF</color>
+
+    <color name="divider_line">#d0d0d0</color>
+
+    <color name="tab_selected_text_color">#596efb</color>
+
+
+    <color name="swip_color_1">#ff0f0f</color>
+    <color name="swip_color_2">#0f0fff</color>
+    <color name="swip_color_3">#5f7fa0</color>
+    <color name="img_tag_bg">#66000000</color>
+</resources>

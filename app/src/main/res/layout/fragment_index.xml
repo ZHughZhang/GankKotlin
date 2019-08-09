@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		<RelativeLayout
+				android:background="@android:color/white"
+				android:layout_width="match_parent"
+				android:fitsSystemWindows="true"
+				android:layout_height="50dp">
+			<TextView
+					android:gravity="center_vertical"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:id="@+id/tv_re_search"
+					android:text="搜索"
+					android:textSize="@dimen/ts_content"
+					android:layout_centerVertical="true"
+					android:drawableRight="@mipmap/ic_search"
+					android:textColor="@android:color/black"
+					android:background="@drawable/search_bg"
+					android:layout_marginStart="20dp"
+					android:layout_marginEnd="80dp"
+					android:layout_width="match_parent"
+					android:layout_height="35dp"/>
+			<ImageButton
+					android:id="@+id/ib_scan"
+					android:layout_width="60dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:src="@mipmap/ic_scan"
+					android:background="@android:color/transparent"/>
+		</RelativeLayout>
+		<android.support.design.widget.TabLayout
+				android:background="@android:color/white"
+				android:id="@+id/tab_index"
+				app:tabMode="scrollable"
+				app:tabGravity="center"
+				app:tabIndicatorHeight="0dp"
+				app:tabMinWidth="0dp"
+				app:tabSelectedTextColor="@color/tab_selected_text_color"
+				app:tabTextColor="@android:color/black"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+		</android.support.design.widget.TabLayout>
+		<android.support.v4.view.ViewPager
+				android:id="@+id/vp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+		</android.support.v4.view.ViewPager>
+	</LinearLayout>
+</layout>

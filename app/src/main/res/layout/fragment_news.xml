@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		<TextView
+				android:textColor="@android:color/white"
+				android:background="@android:color/holo_blue_bright"
+				android:gravity="center"
+				android:text="视频专区"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"/>
+		<com.winton.librarystatue.StatueView
+				android:id="@+id/sv"
+				android:layout_marginTop="50dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<android.support.v4.widget.SwipeRefreshLayout
+					android:id="@+id/srl"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+				<android.support.v7.widget.RecyclerView
+						android:id="@+id/rv"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+				</android.support.v7.widget.RecyclerView>
+			</android.support.v4.widget.SwipeRefreshLayout>
+		</com.winton.librarystatue.StatueView>
+		<FrameLayout
+				android:id="@+id/video_full_container"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+		</FrameLayout>
+
+	</FrameLayout>
+</layout>
